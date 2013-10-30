@@ -1,0 +1,28 @@
+{
+    "examples": [
+        {
+            "title": "Yo Cream",
+            "description": "",
+            "url": "http://www.yocream.com/",
+            "tags": ""
+        },
+        {
+            "title": "World Impact",
+            "description": "Theme built on Liferay",
+            "url": "http://www.worldimpact.org",
+            "tags": "Liferay"
+        },
+        {
+            "title": "World Impact Camps",
+            "description": "Theme built on Liferay",
+            "url": "http://www.worldimpactcamps.org",
+            "tags": "Liferay, AlloyUI"
+        },
+        {
+            "title": "World Impact Schools",
+            "description": "Theme built on Liferay",
+            "url": "http://www.worldimpactschools.org",
+            "tags": "Liferay, AlloyUI"
+        }
+    ]
+}

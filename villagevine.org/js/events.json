@@ -1,0 +1,46 @@
+{
+    "events": [
+        {
+            "title": "4th of July Parade",
+            "date": "7/4/13",
+            "start-time": "10:00am",
+            "stop-time": "",
+            "url": "audio/Sierra_Madre4thofJuly_Parade2013.mp3"
+        },
+        {
+            "title": "Mount Wilson Trail Race - LIVE WEBCAST-   Saturday May 25th from 8:30am - 10:30am Listen HERE!!!",
+            "date": "5/25/13",
+            "start-time": "8:30am",
+            "stop-time": "10:30am",
+            "url": "audio/Trail_Race052513.mp3"
+        },
+        {
+            "title": "St. Rita School Girl Scout Conflict Resolution Project Interview.",
+            "date": "2/19/13",
+            "start-time": "",
+            "stop-time": "",
+            "url": "audio/Girl_Scout_Interview021913B.mp3"
+        },
+        {
+            "title": "Third Annual State of the City Address",
+            "date": "2/19/13",
+            "start-time": "",
+            "stop-time": "",
+            "url": "audio/State_of_the_City_Final.mp3"
+        },
+        {
+            "title": "Sierra Madre Float Construction",
+            "date": "2/19/13",
+            "start-time": "",
+            "stop-time": "",
+            "url": "audio/SM_Rose_Bowl_Float.mp3"
+        },
+        {
+            "title": "2012 Sierra Madre Fourth of July Parade",
+            "date": "7/4/12",
+            "start-time": "",
+            "stop-time": "",
+            "url": "audio/4thofjuly2012.mp3"
+        }
+    ]
+}
