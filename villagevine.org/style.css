@@ -1,0 +1,9 @@
+#disclaimer {
+  opacity: 1;
+  
+}
+
+body:hover #disclaimer {
+  opacity: 0;
+  transition: opacity 10s;
+}
