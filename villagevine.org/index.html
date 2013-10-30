@@ -159,12 +159,17 @@
         <script>
           $('.carousel').carousel();
 
+
           // Sponsor List
           var sponsorList = $('#sponsors');
           $.getJSON( "js/sponsors.json", function( data ) {
             var sponsors = data.sponsors;
 
-            sponsors.each
+            sponsors.sort(function(a, b) {
+              var x = a.title.toLowerCase(), y = b.title.toLowerCase();
+              return x < y ? -1 : x > y ? 1 : 0;
+            });
+            
             $.each(sponsors, function( key, val ) {
               var title = val.title;
               var url = val.url;
