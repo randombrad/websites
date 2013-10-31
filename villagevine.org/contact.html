@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Village Vine Radio</title>
+  <title>Village Vine Radio - Contact Us</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
 
@@ -67,48 +67,19 @@
       <div class="container">
         <div class="col-md-7">
           <br/>
-          <div id="carousel-example-generic" class="carousel slide">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
-            
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="images/carousel-1.jpg" alt="...">
-                <div class="carousel-caption"></div>
-              </div>
-              <div class="item">
-                <img src="images/carousel-2.jpg" alt="...">
-                <div class="carousel-caption"></div>
-              </div>
-              <div class="item">
-                <img src="images/carousel-3.jpg" alt="...">
-                <div class="carousel-caption"></div>
-              </div>
-            </div>
 
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-              <span class="icon-prev"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-              <span class="icon-next"></span>
-            </a>
-          </div>
-
-          <h2>About Village Vine Radio</h2>
+          <h2>GENERAL INQUIRIES</h2>
           <p>
-            In 2011, local entrepreneur Jim Moran started Sierra Madre’s first internet radio station, Radio Fishbowl. He operated the station with the assistance of James Faulkner aka DJ Boddington.  In the fall of 2012, after a run of almost 2 years, Jim Moran decided to move on to other business opportunities and agreed to turn the station over to The Jim Moran Community Radio Foundation, Inc., a non-profit corporation founded by Gene Goss in honor of Jim Moran’s path breaking work with Radio Fishbowl.</p>
+            If you have general questions regarding our website or VILLAGE VINE ONLINE, please complete the form below and we will respond as soon as we are able.
+          </p>
+          <h2>PUBLIC SERVICE ANNOUNCEMENTS</h2>
 
-          <p>The JMCRF Board of Directors, under the leadership of Board Chairman Gene Goss, then developed the subsidiary Village Vine Online. Village Vine Online is a community radio station based in Sierra Madre and serves Sierra Madre and the San Gabriel Valley. Its goal is to serve as a source of locally derived information and entertainment with the further aim of helping sustain the community by supplementing and supporting existing community institutions.</p>
-            
-          <p>The JMCRF Board is now recruiting 15 members of the community to serve on its new Community Advisory Board. To apply, please send an email to hostvi@yahoo.com.</p>
-          <h3>Events:</h3>
-          <ul id="events" class="list-group"></ul>
+          <p>If you have a public service announcement for a non-profit organization or civic event,  we would be happy to webcast the announcement.  We also have the ability to professionally produce your announcement, using your script and direction. Use the form below to submit your request.</p>
+
+          <h2>NON-PROFIT ORGANIZATIONS</h2>
+          If your non-profit Organization has an event you would like publicized, we can help. A small group of your members are welcome to be the voice of your announcement. We'll record, and produce broadcast quality announcements that will be played on VILLAGE VINE ONLINE featuring your organization's member's voices. It's lots of fun to produce and it's really cool to hear your own voice on the radio! The schedule for these types of announcements is on a space available basis.
+
+          <h4>VILLAGE VINE ONLINE reserves the right to reject or cancel any announcement at any time.</h4>
         </div>
         <div class="col-md-5">
           <br/>
@@ -176,68 +147,6 @@
       });
       
     });
-
-    var eventNode = $('#events');
-        eventLinks = $("#events li a");
-
-
-    // Event List
-    var eventList = $('#events');
-    $.getJSON( "js/events.json", function( data ) {
-      var events = data.events;
-
-      events.sort(function(a, b) {
-        var x = a.date.toLowerCase(), y = b.date.toLowerCase();
-        return x < y ? -1 : x > y ? 1 : 0;
-      });
-      
-      $.each(events, function( key, val ) {
-        var title = val.title;
-        var url = val.url;
-        var event = $('<li></li>');
-        event.addClass('list-group-item');
-        if (url !=""){
-          event.html("<a href='"+url+"'>"+title+"</a>");
-        }else {
-          event.html(title);
-        }
-        eventList.append(event);
-      });
-      
-    });
-
-    var audio = new Audio();
-
-    $('#events').delegate("a", "click", function (event) {
-      event.preventDefault();
-      console.log(audio);
-      audio.src = $(this).attr("href");
-      audio.play();
-
-      updateDur(audio, $(this));
-      
-    });
-
-    function updateDur(audio, item){
-      item.after( "<span class='time'></span>");
-
-      setInterval(function() {
-        var rem = parseInt(audio.duration - audio.currentTime, 10),
-        pos = (audio.currentTime / audio.duration) * 100,
-        mins = Math.floor(rem/60,10),
-        secs = rem - mins*60;
-        if (audio.currentTime){
-           item.next().html(' -' + mins + ':' + (secs > 9 ? secs : '0' + secs));
-        }
-       
-      // Do something every 2 seconds
-      }, 1000);
-      
-    }
-  
-    function loadSong(url){
-      console.log("url");
-    }
 
     var hideModal = $.cookie("hide-modal");
 
