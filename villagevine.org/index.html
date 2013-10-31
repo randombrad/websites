@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title></title>
+  <title>Village Vine Radio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
 
@@ -67,81 +67,75 @@
       </div>
 
       <div class="container">
-          <div class="col-md-7">
-            <br/>
-            <div id="carousel-example-generic" class="carousel slide">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              </ol>
-              
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                  <img src="images/carousel-1.jpg" alt="...">
-                  <div class="carousel-caption"></div>
-                </div>
-                <div class="item">
-                  <img src="images/carousel-2.jpg" alt="...">
-                  <div class="carousel-caption"></div>
-                </div>
-                <div class="item">
-                  <img src="images/carousel-3.jpg" alt="...">
-                  <div class="carousel-caption"></div>
-                </div>
+        <div class="col-md-7">
+          <br/>
+          <div id="carousel-example-generic" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="images/carousel-1.jpg" alt="...">
+                <div class="carousel-caption"></div>
               </div>
-
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                <span class="icon-prev"></span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                <span class="icon-next"></span>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <br/>
-            <audio src="audio/Girl_Scout_Interview021913B.mp3" controls loop>
-              <p>Your browser does not support the audio element </p>
-            </audio>
-            <h3>Sponsors:</h3>
-            <ul id="sponsors" class="list-group"></ul>
-          </div>
-        <div class="row">
- <div class="col-lg-5">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <button type="button" class="btn btn-default btn-sm pull-left">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                  </button>
-                  
-                  <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </button>
-                  
-                  <h3 class="panel-title pull-right">Events</h3>
-                </div>
-                <div class="panel-body">
-                  <div id="events"></div>
-                </div>
+              <div class="item">
+                <img src="images/carousel-2.jpg" alt="...">
+                <div class="carousel-caption"></div>
+              </div>
+              <div class="item">
+                <img src="images/carousel-3.jpg" alt="...">
+                <div class="carousel-caption"></div>
               </div>
             </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+          </div>
+
+          <h2>About Village Vine Radio</h2>
+          <p>
+            In 2011, local entrepreneur Jim Moran started Sierra Madre’s first internet radio station, Radio Fishbowl. He operated the station with the assistance of James Faulkner aka DJ Boddington.  In the fall of 2012, after a run of almost 2 years, Jim Moran decided to move on to other business opportunities and agreed to turn the station over to The Jim Moran Community Radio Foundation, Inc., a non-profit corporation founded by Gene Goss in honor of Jim Moran’s path breaking work with Radio Fishbowl.</p>
+
+          <p>The JMCRF Board of Directors, under the leadership of Board Chairman Gene Goss, then developed the subsidiary Village Vine Online. Village Vine Online is a community radio station based in Sierra Madre and serves Sierra Madre and the San Gabriel Valley. Its goal is to serve as a source of locally derived information and entertainment with the further aim of helping sustain the community by supplementing and supporting existing community institutions.</p>
+            
+          <p>The JMCRF Board is now recruiting 15 members of the community to serve on its new Community Advisory Board. To apply, please send an email to hostvi@yahoo.com.</p>
+          <h3>Events:</h3>
+          <ul id="events" class="list-group"></ul>
+        </div>
+        <div class="col-md-5">
+          <br/>
+          <audio src="audio/Girl_Scout_Interview021913B.mp3" controls loop>
+            <p>Your browser does not support the audio element </p>
+          </audio>
+          <h3>Sponsors:</h3>
+          <ul id="sponsors" class="list-group"></ul>
         </div>
 
-        <hr>
-
+        
+       </div>
+       <div class="col-md-12">
+       <hr>
         <footer>
-          <p>&copy; Company 2013</p>
+          <p class="text-center">&copy; Company 2013</p>
         </footer>
-        <div id="myModal" class="modal fade">
+        </div>
+     
+      <div id="myModal" class="modal fade">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <button type="button" class="close close-keep" data-dismiss="modal" aria-hidden="true">&#43;</button>
+                <button type="button" class="close close-hide" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title">Disclaimer:</h4>
               </div>
               <div class="modal-body">
@@ -150,7 +144,6 @@
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-      </div>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
@@ -189,20 +182,36 @@
     var eventNode = $('#events');
         eventLinks = $("#events li a");
 
-    $.getJSON("js/events.json", function(data){  // get the JSON array
+
+    // Event List
+    var eventList = $('#events');
+    $.getJSON( "js/events.json", function( data ) {
       var events = data.events;
-      var playItem = $("<ul></ul>");
-      $.each(events, function(index,value){
-          
 
-          console.log(value.title);
-          playItem.append("<li><a href='#' onClick='loadSong("+value.url+");'>"+value.title+"</a></li>");
-
-
-         eventNode.html(playItem);
+      events.sort(function(a, b) {
+        var x = a.date.toLowerCase(), y = b.date.toLowerCase();
+        return x < y ? -1 : x > y ? 1 : 0;
       });
+      
+      $.each(events, function( key, val ) {
+        var title = val.title;
+        var url = val.url;
+        var event = $('<li></li>');
+        event.addClass('list-group-item');
+        if (url !=""){
+          event.html("<a href='#' data-url="+url+"'>"+title+"</a>");
+        }else {
+          event.html(title);
+        }
+        eventList.append(event);
+      });
+      
     });
 
+    $('#events > a').click(function() {
+      $( this ).slideUp();
+    });;
+  
     function loadSong(url){
       console.log("url");
     }
@@ -213,8 +222,12 @@
       $('#myModal').modal('toggle');
     }
     
-    $('#myModal .close').click(function() {
+    $('#myModal .close-hide').click(function() {
       $.cookie("hide-modal", 1);
+    });
+
+    $('#myModal .close-keep').click(function() {
+      $('#myModal').modal('toggle');
     });
   </script>
   <script>
