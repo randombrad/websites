@@ -114,7 +114,7 @@
         </div>
         <div class="col-md-5">
           <br/>
-          <audio src="audio/Girl_Scout_Interview021913B.mp3" controls loop>
+          <audio id="audio-player" src="audio/Girl_Scout_Interview021913B.mp3" controls loop>
             <p>Your browser does not support the audio element </p>
           </audio>
           <h3>Sponsors:</h3>
@@ -199,7 +199,7 @@
         var event = $('<li></li>');
         event.addClass('list-group-item');
         if (url !=""){
-          event.html("<a href='#' data-url="+url+"'>"+title+"</a>");
+          event.html("<a href='"+url+"'>"+title+"</a> <span class='action-play glyphicon glyphicon-play-circle'></span>");
         }else {
           event.html(title);
         }
@@ -208,9 +208,14 @@
       
     });
 
-    $('#events > a').click(function() {
-      $( this ).slideUp();
-    });;
+    var audio = new Audio();
+
+    $('#events').delegate("a", "click", function (event) {
+      event.preventDefault();
+      console.log(audio);
+      audio.src = $(this).attr("href");
+      audio.play();
+    });
   
     function loadSong(url){
       console.log("url");
