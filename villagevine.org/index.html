@@ -228,8 +228,10 @@
         pos = (audio.currentTime / audio.duration) * 100,
         mins = Math.floor(rem/60,10),
         secs = rem - mins*60;
-        item.next().html(' -' + mins + ':' + (secs > 9 ? secs : '0' + secs));
-        console.log(audio.currentTime);
+        if (secs > 0){
+           item.next().html(' -' + mins + ':' + (secs > 9 ? secs : '0' + secs));
+        }
+       
       // Do something every 2 seconds
       }, 1000);
       
