@@ -2,27 +2,84 @@
     "examples": [
         {
             "title": "Yo Cream",
-            "description": "",
+            "description": "website for Dannon Yogurt",
             "url": "http://www.yocream.com/",
-            "tags": ""
+            "tags": "Liferay, CSS, HTML, Velocity, Theme",
+            "type": "site"
         },
         {
             "title": "World Impact",
             "description": "Theme built on Liferay",
             "url": "http://www.worldimpact.org",
-            "tags": "Liferay"
+            "tags": "Liferay, Theme, AlloyUI, Vimeo API",
+            "type": "site"
         },
         {
             "title": "World Impact Camps",
             "description": "Theme built on Liferay",
             "url": "http://www.worldimpactcamps.org",
-            "tags": "Liferay, AlloyUI"
+            "tags": "Liferay, Theme, AlloyUI",
+            "type": "site"
         },
         {
             "title": "World Impact Schools",
             "description": "Theme built on Liferay",
             "url": "http://www.worldimpactschools.org",
-            "tags": "Liferay, AlloyUI"
+            "tags": "Liferay, Theme, AlloyUI",
+            "type": "site"
+        },
+        {
+        	"title": "Input Edit Sample",
+            "description": "Click edit button, input text",
+            "url": "http://htmlpreview.github.io/?https://gist.github.com/randombrad/32160f2608ceb1887d68/raw/3872709171b84091bb15a6d40e045f8f522808e4/index.html",
+            "tags": "github, input, form",
+            "type": "snippit"
+        },
+        {
+        	"title": "Email Web Content",
+            "description": "Send email using velocity in webcontent",
+            "url": "https://gist.github.com/randombrad/6542602",
+            "tags": "velocity, Liferay, form",
+            "type": "snippit"
+        },
+        {
+        	"title": "Developer Cisco Network",
+            "description": "Developer Network for Cisco Systems",
+            "url": "http://developer.cisco.com/",
+            "tags": "Liferay, Theme, CSS, JS",
+            "type": "site"
+        },
+        {
+        	"title": "Zoe Tech Theme",
+            "description": "Liferay Theme",
+            "url": "http://www.liferay.com/marketplace/-/mp/application/15849919",
+            "tags": "Liferay, Theme, Marketplace",
+            "type": "theme"
+        	
+        },
+        {
+        	"title": "Zoe Brochure Theme",
+            "description": "Liferay Theme",
+            "url": "http://www.liferay.com/marketplace/-/mp/application/15849778",
+            "tags": "Liferay, Theme, Marketplace",
+            "type": "theme"
+        	
+        },
+        {
+        	"title": "Zoe Healthcare Theme",
+            "description": "Liferay Theme",
+            "url": "http://www.liferay.com/marketplace/-/mp/application/15849838",
+            "tags": "Liferay, Theme, Marketplace",
+            "type": "theme"
+        	
+        },
+        {
+        	"title": "Zoe Resort Theme",
+            "description": "Liferay Theme",
+            "url": "http://www.liferay.com/marketplace/-/mp/application/15849867",
+            "tags": "Liferay, Theme, Marketplace",
+            "type": "theme"
+        	
         }
     ]
 }
