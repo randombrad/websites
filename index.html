@@ -48,7 +48,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <p>These sites are examples of how I would update design and content of current websites. Please note this is only an exercise for me and the owner of the sites have not been notified.</p>
+        <p>These are examples of works by Bradley Wood, consiting of websites, code snippets, and Liferay Marketplace Themes.</p>
       </div>
     </div>
 
@@ -70,7 +70,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Company 2013</p>
+        <p>&copy; Bradley Wood 2013</p>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
@@ -95,14 +95,15 @@
               var title = val.title;
               var url = val.url;
               var tags = val.tags;
+              var type = val.type.toLowerCase();
               var description = val.description;
-              var listGroupItem = $('<a></a>');
+              var listGroupItem = $('<a target="new_window"></a>');
               var listGroupContent = $('<p></p>');
               var tagList = $('<p></p>');
               listGroupItem.addClass("list-group-item");
               listGroupItem.attr("href",url);
               listGroupItem.addClass('list-group-item');
-              listGroupItem.html("<h4 class='list-group-item-heading'>"+title+"</h4>");
+              listGroupItem.html("<h4 class='list-group-item-heading'>"+title+" - "+type+"</h4>");
 
               listGroupContent.addClass("list-group-item-text");
               listGroupContent.html(description);
@@ -115,9 +116,6 @@
               });
               listGroupItem.append(tagList);
              }
-              
-
-              
 
               exampleList.append(listGroupItem);
             });
